@@ -2,9 +2,15 @@ templates_c
 include/config.inc.php
 travail
 texts/appareils/*
+!texts/appareils
 texts/marques/*
+!texts/marques
 texts/montures/*
+!texts/montures
 texts/obturateurs/*
+!texts/obturateurs
 texts/tempo/*
 texts/typeapps/*
-photos
+!texts/typeapps/
+photos/*
+!photos
