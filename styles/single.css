@@ -1,0 +1,33 @@
+#existant p
+{
+  margin: 0px;
+  padding: 0px;
+}
+#existant
+{
+  float: left;
+  border-style: double;
+  border-color: black;
+  background-color: white;
+  width: 350px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 35px;
+}
+#new_item
+{
+  padding: 35px;
+
+}
+#boutons
+{
+  clear: both;
+  padding-left: 150px;
+  padding-top: 20px;
+ /* text-align: center;*/
+}
+#boutons input
+{
+  margin-top: 10px;
+  margin-left: 60px;
+}

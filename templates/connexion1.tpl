@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Collection appareils photos /Camera collection</title>
+  <link rel="stylesheet" type="text/css" href="styles/globale.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+	<div id="Corps">
+		<h1>{$Connection}</h1>
+		{if isset($Erreur)}
+		<p><strong>{$Erreur}</strong></p>
+		{/if}
+		<form name="Login" method="post" action="connexion.php">
+			<p><label for="NomUser">{$Login} : </label><input name="NomUser" required="required" type="text" id="NomUser"></p>
+			<p><label for="Mot_Passe">{$MDP} : </label><input name="Mot_Passe" required="required" type="password" id="Mot_Passe"></p>
+			<input name="SubBtn" value="{$Validation}" type="submit">
+		</form>
+		<p><a href="index.php">{$Retour}</a></p>
+	</div>	
+	<footer>
+	<p>Gestion collection mat&eacute;riel photographique version :{$VersionNum}</p>
+	<p>Copyright &copy; 2018 Editiel 98, Guillaume Cregut</p>
+	<p>Moteur utilis&eacute; : MySQL.</p>
+	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue"  alt="Valid HTML 4.01 Transitional" height="31" width="88"></a></p>
+</footer>
+</body>
+</html>	

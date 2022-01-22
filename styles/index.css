@@ -1,0 +1,133 @@
+#Essai
+{
+	display : flex;
+}
+#Entete
+{
+	margin : auto;
+	flex-direction : row;
+	width : 90%;
+	align-items : center;
+	display : flex;
+}
+
+header
+{
+	margin : auto;
+	height : 130px;
+}
+
+header h1
+{
+	text-align : center;
+}
+header img
+{
+	/*position :relative;*/
+	width : 100px;
+	margin : 10px 40px 10px 10px;
+	float : left;
+	vertical-align : middle;
+}
+nav
+{
+	background :  url('../images/separateur.png') repeat-x bottom,  url('../images/separateur.png') repeat-x top;
+	display : flex;
+	background-color : #d8f6ff;
+	width : 100%;
+	padding-bottom : 1px;
+}
+
+nav a 
+{
+	text-decoration : none;
+	display : inline-block;
+	
+}
+nav a:hover 
+{
+	text-decoration : underline;
+	text-transform : inherit;
+	color : #fff;
+}
+#Navigation
+{
+	margin : auto;
+	display : flex;
+	justify-content : space-between;
+}
+nav h2 a
+{
+  padding : 20px 30px;
+  color : blue;
+}  
+nav h2
+{
+  color : blue;
+}  
+nav  ul
+{
+  list-style: none;
+  margin : 0px;
+  padding :0px;
+}
+.Menus
+{
+	display : flex;
+	text-align : center;
+}
+.Menus li
+{
+	position : relative;
+}
+.Menus li:hover 
+{
+	background-color : #acc4cc; /*Couleur de la ligne du menu principal si on passe dessus*/
+	border-top : 5px solid green;
+}
+.Menus li:hover .subMenu
+{
+	display : inline-block;
+	position : absolute;
+	top : 100%;
+	left : 0px;
+	padding : 0px;
+	z-index : 1000;
+}
+.Menus li:hover a
+{
+	padding : 15px 30px 20px 30px;
+}
+.Menus ul::after
+{
+	content:"";
+	display : block;
+	clear :both;
+}
+.subMenu
+{
+	display : none;
+	background-color : #f9ffff;
+	border-radius : 0 0 8px 8px;
+}
+.subMenu li
+{
+	text-align : center;
+	border-bottom : 1px solid #CCC;
+}
+.subMenu li a 
+{
+	padding : 15px 30px;
+	/*font-size : 13px;*/
+	color : #222538;
+	width : 200px;
+}
+.subMenu li:hover
+{
+	width : inherit;
+	border  :0;
+}
+.subMenu li:last-child
+{
+	border-radius : 0 0 8px 8px;
+}

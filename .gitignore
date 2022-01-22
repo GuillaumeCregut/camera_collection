@@ -1,0 +1,10 @@
+templates_c
+include/config.inc.php
+travail
+texts/appareils/*
+texts/marques/*
+texts/montures/*
+texts/obturateurs/*
+texts/tempo/*
+texts/typeapps/*
+photos

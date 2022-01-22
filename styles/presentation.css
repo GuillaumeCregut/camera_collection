@@ -1,0 +1,56 @@
+h1
+{
+	text-align : center;
+}
+#cadre
+{
+  margin :  auto;
+  width : 1024px;
+  display : flex;
+  border-style: groove;
+  background-color: #f6edd0;
+  border-width: thick;
+  border-color: gray;
+  flex-wrap : wrap;
+  justify-content : space-between;
+}
+.case
+{
+	margin : 20px;
+	padding : 20px;
+	display : flex;
+	flex-direction : column;
+}
+.case p
+{
+	margin : auto;
+}
+.case img
+{
+	margin : auto;
+}
+.case:hover
+{
+	background-color : #e5ddc2;
+}
+.case a
+{
+	text-decoration : none;
+	color : black;
+}
+.case a:hover
+{
+	color : red;
+}
+#Formulaire
+{
+	margin-left : 30px;
+}
+#questions
+{
+	display : flex;
+}
+#questions p
+{
+	margin-left : 10px;
+}

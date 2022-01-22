@@ -1,0 +1,21 @@
+body
+{
+  background-color: #fff6d8;
+  background : url('../images/fond.png');
+  margin : 0px;
+  padding : 0px;
+}
+h1
+{
+	text-align : center;
+}
+footer{
+background :  url('../images/separateur.png') repeat-x top;
+padding-top : 20px;
+padding-left : 10px;
+margin-top : 10px;
+}
+#Corps
+{
+	padding-left : 5px;
+}

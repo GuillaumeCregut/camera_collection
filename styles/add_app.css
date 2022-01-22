@@ -1,0 +1,38 @@
+ul
+{
+  list-style: none;
+}
+#existant p
+{
+  margin: 0px;
+  padding: 0px;
+}
+#existant
+{
+  float: left;
+  clear: bottom;
+  width: 250px;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+#new_item
+{
+  clear: both;
+  position: relative;
+  left: 260px;
+  top: -150px;
+
+}
+#boutons
+{
+  position: relative;
+  top: -140px;
+  clear: both;
+  padding-left: 150px;
+}
+#boutons input
+{
+  margin-left: 60px;
+}

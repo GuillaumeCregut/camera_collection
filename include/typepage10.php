@@ -1,0 +1,25 @@
+<?php
+/*
+  Version  : 1.2 R2
+  Date de modification : 19 décembre 2008.
+*/
+//Squelette de la page appareil
+  $TitrePageE="devices";
+  $TitrePageF="appareils";
+  $RequeteAdd="";
+  $RequeteSupp="";
+  $RequeteMod="";
+  $RequeteSelect="SELECT Nom_Item AS NOM_GEN, Ref_Inv AS PK_GEN FROM t_item ORDER BY Nom_Item";
+  $NomRepItem="appareils/";
+  $RequeteAffiche="SELECT TI.REF_INV,TI.ANNEE_PROD, TI.PHOTOS, TI.NOM_ITEM, TI.PRIX_ACHAT, TI.ETAT, TI.HIST_ITEM, TI.NOTES_PERSO, TA.PK_APPAREIL,TA.NOM_TAPP,TM.PK_TMAT,TM.NOM_MAT,TMo.PK_MONTURE,TMo.NOM_MONTURE,TF.PK_FORMAT,TF.NOM_FORMAT,TP.PK_PERIODE,TP.NOM_PERIODE,TMa.PK_MARQUE,TMa.NOM_MARQUE,TFi.PK_FILM,TFi.NOM_FILM,TOb.PK_OBTU,TOb.NOM_OBTU
+FROM t_item TI
+INNER JOIN t_appareil TA ON TA.PK_APPAREIL = TI.FK_APP
+INNER JOIN t_materiel TM ON TM.PK_TMAT = TI.FK_MAT
+INNER JOIN t_monture TMo ON TMo.PK_MONTURE = TI.FK_MONTURE
+INNER JOIN t_format TF ON TF.PK_FORMAT = TI.FK_FORMAT
+INNER JOIN t_periode TP ON TP.PK_PERIODE = TI.FK_PERIODE
+INNER JOIN t_marque TMa ON TMa.PK_MARQUE = TI.FK_MARQUE
+INNER JOIN t_film TFi ON TFi.PK_FILM = TI.FK_FILM
+INNER JOIN t_obturateur TOb ON TOb.PK_OBTU = TI.FK_OBTU
+WHERE TI.REF_INV='";
+?>

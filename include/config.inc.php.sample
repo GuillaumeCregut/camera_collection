@@ -1,0 +1,15 @@
+<?php
+/*
+Version  : 1.2 R3
+*/
+$DBUser="YOUR_DB_USER";
+$DBPass="YOUR_DB_PASS";
+$DBName="YOUR_DB_NAME";
+$DBServer="YOUR_DB_HOST";
+$EnteteRep="../texts/";
+$PrivateUse =true;
+$VersionNum="1.2 R3";
+$User_Gestion="YOUR_LOGIN";
+$Pass_Gestion="YOUR_PASS";
+$BaseType=0;
+$Langue_Sys="F";

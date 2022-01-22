@@ -1,0 +1,73 @@
+h1
+{
+	text-align : center;
+}
+#Corps
+{
+	padding-left : 5px;
+}
+p
+{
+  margin:1px;
+  padding: 1px;
+}
+a:link, a:visited
+{
+  text-decoration: none;
+  color: red;
+}
+h1
+{
+ text-align: center;
+}
+div
+{
+ /* background-color: gray;  */
+  width: 500px;
+}
+h2
+{
+  text-decoration: underline;
+  margin-left: 20px;
+}
+.definition
+{
+  text-decoration: underline;
+}
+.valeur
+{
+ color: red;
+ font-weight: bold;
+}
+div a
+{
+  text-decoration: none;
+  color: red;
+}
+div a:hover
+{
+  text-decoration: underline;
+  background-color: yellow;
+}
+.texte
+{
+  word-wrap: break-word;
+  margin: 5px 5px 5px 5px;
+  padding: 0px 5px 5px 5px;
+  background-color: white;
+  border-style: double;
+  border-color: black;
+}
+#photos
+{
+  display: inline;
+}
+img
+{
+   margin: 0px;
+   padding: 5px;
+}
+.BlocInfo
+{
+	padding-left : 30px;
+}
