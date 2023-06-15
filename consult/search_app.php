@@ -2,8 +2,8 @@
 /*
   Version  : 1.2 R3
   Date de modification : 21 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : search_app.php
   Fonction : affiche les les resultats de le recherche par critere
 */
@@ -11,7 +11,7 @@
 //Importation des infos
   include "../include/config.inc.php";
   include "../include/function.inc.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $Langue=$Langue_Sys;;
   if (isset($_POST["chRef"]))
   {
@@ -350,7 +350,7 @@
   //Debug
   //echo "<p>$SQLS1</p>\n";
   //Fin debug
- //Connexion à la base de données
+ //Connexion ï¿½ la base de donnï¿½es
   $connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 //Execution de la requete
   if (!$connecter)

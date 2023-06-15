@@ -2,8 +2,8 @@
   /*
   Version  : 1.2 R2
   Date de modification : 14 Mai 2018.
-  Validé fonctionnelle : oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : oui
+  Validï¿½ W3C : Oui
   Nom : single.php
   Fonction : Gere ce qui est single.
 */
@@ -11,7 +11,7 @@
 session_start();
 include "../include/config.inc.php";
 include "../include/function.inc.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 if(isset($_GET["NumPage"]))
@@ -54,10 +54,10 @@ if (isset($_SESSION['InSession_Photo']))
 		$template->assign("Type_Page",$Type_Page);
 		$template->assign("Langue",$Langue);
 		$template->assign("StyleExist",$StyleExist);
-		//ici on liste les items présents
+		//ici on liste les items prï¿½sents
 		$SQLS=$RequeteSelect;
 		$OK=FALSE;
-		//Connexion à la base de données
+		//Connexion ï¿½ la base de donnï¿½es
 		$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 		//Execution de la requete
 		if (!$connecter)

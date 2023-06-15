@@ -1,12 +1,12 @@
 <?php
 /*
   Version  : 1.2 R3
-  Date de création : 21 Mai 2018.
+  Date de crï¿½ation : 21 Mai 2018.
   Date de modification : 21 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : gestion/prod_pdf.php
-  Fonction : génère le catalogue.
+  Fonction : gï¿½nï¿½re le catalogue.
   Voir si bug dans fonction inclusion des choix (stats, etc...)
 */
   require('../include/lepdf.inc.php');
@@ -14,12 +14,12 @@
   include "../include/config.inc.php";
   include "../include/function.inc.php";
   include "../include/typepage10.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $template=new Smarty(); 
   $CheminTpl='../templates/';
-//Initialisation de la récupération
+//Initialisation de la rï¿½cupï¿½ration
   $Langue=$Langue_Sys;
-  //Connexion à la base de données
+  //Connexion ï¿½ la base de donnï¿½es
   $connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 //Execution de la requete
   if (!$connecter)
@@ -86,7 +86,7 @@
       $LeTexte_Perso="";
     }
     $LeTexte_Perso=str_ireplace('<br>',"\n",$LeTexte_Perso);
-  //Traitement de l'état
+  //Traitement de l'ï¿½tat
     $Etat='';
     switch($row["ETAT"])
     {
@@ -94,7 +94,7 @@
                 break;
       case 2 :  $Etat='Bon';
                 break;
-      case 3 :  $Etat="Necessite une révision";
+      case 3 :  $Etat="Necessite une rï¿½vision";
                 break;
       case 4 :  $Etat='A restaurer';
                 break;
@@ -107,7 +107,7 @@
      $ArrayPhoto=explode(';',$MesPhotos);
      $Nombrephoto=(int) $ArrayPhoto[0];
      $CheminBase= "../photos/".$ArrayPhoto[1];
-  //Repartition des données
+  //Repartition des donnï¿½es
     $LeNom=utf8_decode($row["NOM_ITEM"]);
     $LeTypeMat=utf8_decode($row["NOM_MAT"]);
     $LeObj=utf8_decode($row["NOM_MONTURE"]);
@@ -133,11 +133,11 @@
     $pdf->setY(80);
     $pdf->SetFont('Arial','B',14);
     $DeuxiemeLigne=0;
-//Début de ligne double
-  //Type et année de production
-    $pdf->AddLigne('Type de matériel : ','Année de production : ',$LeTypeMat,$LAnnCons);
- //Marque et  période
-    $pdf->AddLigne('Marque : ','Période : ',$LaMarque,$LaPer);
+//Dï¿½but de ligne double
+  //Type et annï¿½e de production
+    $pdf->AddLigne('Type de matï¿½riel : ','Annï¿½e de production : ',$LeTypeMat,$LAnnCons);
+ //Marque et  pï¿½riode
+    $pdf->AddLigne('Marque : ','Pï¿½riode : ',$LaMarque,$LaPer);
   //Type app et  format
     $pdf->AddLigne('Type d\'appareil : ','Format : ',$LeApp,$LeForm);
   //Type objectif et  obturateur

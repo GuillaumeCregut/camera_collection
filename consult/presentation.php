@@ -2,14 +2,14 @@
 /*
   Version  : 1.2 R3
   Date de modification :21 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : presentation.php
-  Fonction : affiche les catégories et les appareils.
+  Fonction : affiche les catï¿½gories et les appareils.
 */
   include "../include/config.inc.php";
   include "../include/function.inc.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $template=new Smarty(); 
   $CheminTpl='../templates/';
   $Langue=$Langue_Sys;
@@ -39,7 +39,7 @@
     case 3 : $SQLS="SELECT PK_MARQUE AS cle, NOM_MARQUE AS NOM FROM t_marque ORDER BY NOM_MARQUE";
              break;
   }
-//Connexion à la base de données
+//Connexion ï¿½ la base de donnï¿½es
   $connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 //Execution de la requete
   if (!$connecter)

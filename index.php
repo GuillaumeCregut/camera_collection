@@ -12,7 +12,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 	session_start();
 	include "include/config.inc.php";
-	include("./include/smarty.class.php");
+	include("./include/Smarty.class.php");
 	$CheminTpl='../templates/';
   //Vérification de la langue utilisée : par défaut, le francais
 	$Langue=$Langue_Sys;

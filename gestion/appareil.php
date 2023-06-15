@@ -2,8 +2,8 @@
   /*
   Version  : 1.2 R3
   Date de modification : 22 Mai 2018.
-  Validé fonctionnelle : oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : oui
+  Validï¿½ W3C : Oui
   Nom : appareil.php
   Fonction : gere les appareils.
 */
@@ -13,7 +13,7 @@ $Lapagedemande="../consult/appareil.php";
 include "../include/config.inc.php";
 include "../include/function.inc.php";
 include "../include/typepage10.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 $Langue=$Langue_Sys;
@@ -34,7 +34,7 @@ if (isset($_SESSION['InSession_Photo']))
 	$template->assign("TitreAppareils",$TitreAppareils);
 	$template->assign("Langue",$Langue);
 	$template->assign("StyleExist",$StyleExist);
-	//Connexion à la base de données
+	//Connexion ï¿½ la base de donnï¿½es
 	$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 	if (!$connecter)
 	{
@@ -47,7 +47,7 @@ if (isset($_SESSION['InSession_Photo']))
 			exit();	
 		//fin redirection*********************************************************************************************
 	}
-	//Récupération de la liste des appareils existant et affichage
+	//Rï¿½cupï¿½ration de la liste des appareils existant et affichage
 	$SQLS="SELECT REF_INV, NOM_ITEM,HIST_ITEM,NOTES_PERSO FROM t_item ORDER BY NOM_ITEM";  //$TabApp
 	$sth=$connecter->prepare($SQLS);
 	$sth->execute();

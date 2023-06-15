@@ -2,12 +2,12 @@
 /*
   Version  : 1.2 R2
   Date de modification : 03 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : search_mark.php
-  Fonction : Affiche les résultats de recherche des marques.
+  Fonction : Affiche les rï¿½sultats de recherche des marques.
 */
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   include "../include/config.inc.php";
   include "../include/function.inc.php";
   include "../include/typepage9.php";
@@ -29,7 +29,7 @@
     case "E" : include "../include/LangueEN.inc.php";
                break;
   }
-  //Connexion à la base de données
+  //Connexion ï¿½ la base de donnï¿½es
   $connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
   if (!$connecter)
   {

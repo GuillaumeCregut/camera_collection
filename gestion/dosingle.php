@@ -10,7 +10,7 @@
 session_start();
 include "../include/config.inc.php";
 include "../include/function.inc.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $Langage=$Langue_Sys;
 $DebugMode=False;
 $template=new Smarty(); 

@@ -12,7 +12,7 @@ $DebugMode=false;
 //Include files
 include "../include/config.inc.php";
 include "../include/function.inc.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 $Langage=$Langue_Sys;

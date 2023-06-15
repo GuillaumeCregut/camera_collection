@@ -2,8 +2,8 @@
   /*
   Version  : 1.2 R3
   Date de modification : 14 Mai 2018.
-  Validé fonctionnelle : non
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : non
+  Validï¿½ W3C : Oui
   Nom : double.php
   Fonction : Gere les "Double".
 */
@@ -11,7 +11,7 @@
 session_start();
 include "../include/config.inc.php";
 include "../include/function.inc.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 $Langue=$Langue_Sys;
@@ -50,11 +50,11 @@ if (isset($_SESSION['InSession_Photo']))
 	$NomPage=$CheminTpl.'double_gest.tpl';
 	$template->assign("Mgmt",$Mgmt);
 	$template->assign("Titre1Page",$Titre1Page);
-	//Selection du répertoire.
+	//Selection du rï¿½pertoire.
 	$Repertoire=$EnteteRep.$NomRepItem;
 	$template->assign("Type_Page",$Type_Page);
 	$template->assign("StyleExist",$StyleExist);
-	//ici on liste les items présents
+	//ici on liste les items prï¿½sents
 	$SQLS=$RequeteSelect;
 	$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 	if (!$connecter)

@@ -2,13 +2,13 @@
 /*
   Version  : 1.2 R3
   Date de modification : 20 Mai 2018.
-  Validé fonctionnelle : oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : oui
+  Validï¿½ W3C : Oui
   Nom : view.php
-  Fonction : affichage des détails des catégories.
+  Fonction : affichage des dï¿½tails des catï¿½gories.
 */
 //include files
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $template=new Smarty(); 
   $CheminTpl='../templates/';
   include "../include/config.inc.php";
@@ -60,7 +60,7 @@
 		$template->assign('Titre1Page',$Titre1Page);
 		//Recuperation de la requete du fichier typepage
 		$SQLS=$RequeteSelect;
-		//Connexion à la base de données
+		//Connexion ï¿½ la base de donnï¿½es
 		$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 		//Execution de la requete
 		if (!$connecter)
@@ -75,7 +75,7 @@
 		//fin redirection*********************************************************************************************
 		}
 		//Affichage
-		//Définition du nombre de colonne. a supprimer par la suite
+		//Dï¿½finition du nombre de colonne. a supprimer par la suite
 		$MaxColonne=5;
 		$HauteurCase="20";
 		$sth=$connecter->prepare($SQLS);

@@ -12,7 +12,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 session_start();
 include "include/config.inc.php";
-require("include/smarty.class.php");
+require("include/Smarty.class.php");
 $CheminTpl='../templates/';
 //Chargement du module template
 $template=new Smarty(); 

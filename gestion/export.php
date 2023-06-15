@@ -3,17 +3,17 @@
   /*
   Version  : 1.2 R3
   Date de modification : 21 avril 2018.
-  Validé fonctionnelle : oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : oui
+  Validï¿½ W3C : Oui
   Nom : export.php
-  Fonction : Exporte les données de la base en XML.
+  Fonction : Exporte les donnï¿½es de la base en XML.
 */
 session_start();
 //Inclusion
 include "../include/config.inc.php";
 include "../include/function.inc.php";
 //Recuperation des variables et mises en forme
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty();
 $Lang=$Langue_Sys;
 switch ($Lang)
@@ -29,7 +29,7 @@ default :  include "../include/LangueFR.inc.php";
 if (isset($_SESSION['InSession_Photo']))
 {
 	$NomPage='../templates/export.tpl';
-	//Connexion à la base de données
+	//Connexion ï¿½ la base de donnï¿½es
 	$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 	if (!$connecter)
 	{

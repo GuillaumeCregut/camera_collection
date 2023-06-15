@@ -2,14 +2,14 @@
  /*
   Version  : 1.2 R3
   Date de modification : 21 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : oui
   Nom : result_search.php
   Fonction : affiche les resultats par rapport a search_name.
 */
   include "../include/config.inc.php";
   include "../include/function.inc.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $Langue=$Langue_Sys;
   if (isset($_POST["NumPage"]))
   {
@@ -107,7 +107,7 @@
         case 10 : $SQLS="SELECT  REF_INV AS PK_GEN, NOM_ITEM AS NOM_GEN FROM t_item WHERE UPPER(NOM_ITEM) LIKE '%$LeNomRech%' ORDER BY NOM_ITEM";   //Item
                   break;
       }
-    //Connexion à la base de données
+    //Connexion ï¿½ la base de donnï¿½es
 	$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 	if (!$connecter)
 	{

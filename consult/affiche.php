@@ -2,14 +2,14 @@
 /*
   Version  : 1.2 R3
   Date de modification : 21 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : affiche.php
   Fonction : Affiche le sous dossier provenant de presentation.php.
 */
   include "../include/config.inc.php";
   include "../include/function.inc.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $template=new Smarty(); 
   $CheminTpl='../templates/';
   //Gestion des erreurs
@@ -93,7 +93,7 @@
 		exit();
 	}
 	$SQLS.=$SQLS2;
-	//Connexion a a base de données
+	//Connexion a a base de donnï¿½es
 	$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 	if (!$connecter)
 	{
@@ -106,7 +106,7 @@
 		exit();
 	//fin redirection*********************************************************************************************
 	}
-	//Création du tableau à transmettre à la page web;
+	//Crï¿½ation du tableau ï¿½ transmettre ï¿½ la page web;
 	$CompteurTab=0;
     foreach($connecter->query($SQLS) as $row)
     {
@@ -123,7 +123,7 @@
     //On essai de voir si le fichier mini existe
 		if (!file_exists($CheminPhoto."mini.jpg"))
 		{
-      //Sinon on la crée.
+      //Sinon on la crï¿½e.
 			if (file_exists($CheminPhoto."1.jpg"))
 			{
 				$ImageMini=imagecreatefromjpeg($CheminPhoto."1.jpg");

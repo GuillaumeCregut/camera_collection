@@ -13,7 +13,7 @@ include "../include/config.inc.php";
 include "../include/function.inc.php";
 include "../include/typepage10.php";
 $Langue=$Langue_Sys;
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 if(isset($_POST["ref_app"]))

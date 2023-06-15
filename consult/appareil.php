@@ -2,15 +2,15 @@
 /*
   Version  : 1.2 R3
   Date de modification : 20 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : appareil.php
-  Fonction : Recherche des appareils par critères.
+  Fonction : Recherche des appareils par critï¿½res.
 */
   session_start();
   include "../include/config.inc.php";
   include "../include/function.inc.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $template=new Smarty(); 
   $CheminTpl='../templates/';
   $Langue=$Langue_Sys;
@@ -21,7 +21,7 @@
     case "E" : include "../include/LangueEN.inc.php";
                break;
   }
-//Connexion à la base de données
+//Connexion ï¿½ la base de donnï¿½es
   $connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
 //Execution de la requete
   if (!$connecter)
@@ -107,7 +107,7 @@
   $sth->execute();
   $tabresult= $sth->fetchAll();
   $template->assign('list_mount',$tabresult);
-  if (isset($_SESSION['InSession_Photo'])) //A gérer autrement
+  if (isset($_SESSION['InSession_Photo'])) //A gï¿½rer autrement
   {
 	$template->assign('StateCam',$StateCam);
     $template->assign('Mint',$Mint);

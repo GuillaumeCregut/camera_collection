@@ -8,7 +8,7 @@
   Nom : consult/search.php
   Fonction : Affiche la page permettant la création du catalogue.
 */
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $CheminTpl='../templates/';
   include "../include/config.inc.php";
   $Lemoteur=new Smarty();

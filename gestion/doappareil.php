@@ -11,7 +11,7 @@ session_start();
 include "../include/config.inc.php";
 include "../include/function.inc.php";
 include "../include/typepage10.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 $DebugMode=false;

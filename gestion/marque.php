@@ -2,8 +2,8 @@
   /*
   Version  : 1.2 R3
   Date de modification : 21 Mai 2018.
-  Validé fonctionnelle : oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : oui
+  Validï¿½ W3C : Oui
   Nom : marque.php
   Fonction : Gere les marques.
 */
@@ -12,7 +12,7 @@ session_start();
 include "../include/config.inc.php";
 include "../include/function.inc.php";
 include "../include/typepage9.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 $template=new Smarty(); 
 $CheminTpl='../templates/';
 $Langue=$Langue_Sys;
@@ -35,7 +35,7 @@ if (isset($_SESSION['InSession_Photo']))
 	$template->assign("TitreMarques",$TitreMarques);
 	$template->assign("Langue",$Langue);
 	$template->assign("StyleExist",$StyleExist);
-	//ici on liste les items présents
+	//ici on liste les items prï¿½sents
 	$SQLS="SELECT T_M.PK_MARQUE, T_M.NOM_MARQUE, T_M.HIST_MARQUE, T_P.NOM_PAYS FROM t_marque T_M INNER JOIN t_pays T_P ON T_M.FK_Pays=T_P.PK_Pays ORDER BY Nom_Marque";
 	$OK=FALSE;
 	$connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);

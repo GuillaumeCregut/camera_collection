@@ -12,7 +12,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 session_start();
 include "../include/config.inc.php";
-require("../include/smarty.class.php");
+require("../include/Smarty.class.php");
 //Chargement du module template
 $template=new Smarty(); 
 $Langue=$Langue_Sys;

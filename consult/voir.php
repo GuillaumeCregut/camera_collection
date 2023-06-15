@@ -2,8 +2,8 @@
 /*
   Version  : 1.2 R3
   Date de modification : 20 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : voir.php
   Fonction : Affichage d'un item.
 */
@@ -12,10 +12,10 @@
   $DebugMode=False;
   include "../include/config.inc.php";
   include "../include/function.inc.php";
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $CheminTpl='../templates/';
   $Langue=$Langue_Sys;
-  //Récupération des varaiables
+  //Rï¿½cupï¿½ration des varaiables
   if (isset($_GET["TypePage"]))
 	$Type_Page=$_GET["TypePage"];
   else
@@ -140,7 +140,7 @@
   {
     $SQLS=$SQLS."'";
   }
-//Connexion a la base de données
+//Connexion a la base de donnï¿½es
   $OK=FALSE;
   $connecter=connect_serveur($DBUser,$DBPass, $DBServer,$DBName);
    if (!$connecter)
@@ -161,7 +161,7 @@
     echo "<div align=\"center\"><table border=\"1\" bgcolor=\"blue\">\n";
     echo "<tr><td bgcolor=\"green\">\n";
     echo "<H1>Debug Mode ON</H1>\n";
-    echo "<p>CLé primaire : <font color=\"$couleur\">\"$CleP\"</font></p>\n";
+    echo "<p>CLï¿½ primaire : <font color=\"$couleur\">\"$CleP\"</font></p>\n";
     echo "<p>Requete : <font color=\"$couleur\">$SQLS</font></p>\n";
     echo "<p>Page : <font color=\"$couleur\">$Type_Page</font></p>\n";
     echo "<p>Fin de debug mode</p>\n";
@@ -265,7 +265,7 @@
                 {
                   $LeTexte_Perso="";
                 }
-                //Cas de l'état
+                //Cas de l'ï¿½tat
                 $Phrase="";
                 switch($row["ETAT"])
                 {

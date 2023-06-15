@@ -2,12 +2,12 @@
 /*
   Version  : 1.2 R2
   Date de modification : 3 Mai 2018.
-  Validé fonctionnelle : Oui
-  Validé W3C : Oui
+  Validï¿½ fonctionnelle : Oui
+  Validï¿½ W3C : Oui
   Nom : search_name.php
-  Fonction : Recherche un élément par nom.
+  Fonction : Recherche un ï¿½lï¿½ment par nom.
 */
-  require("../include/smarty.class.php");
+  require("../include/Smarty.class.php");
   $template=new Smarty(); 
   $CheminTpl='../templates/';
   include "../include/config.inc.php";

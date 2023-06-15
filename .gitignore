@@ -13,5 +13,7 @@ texts/tempo/*
 texts/typeapps/*
 !texts/typeapps/index.html
 photos/*
+datas
 !photos/index.html
 !photos
+db_password.txt
